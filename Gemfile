@@ -11,7 +11,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '4.0.0.alpha6'
 gem 'jquery-rails'
-gem 'pg', '~> 0.18' 
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -31,6 +30,10 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+end
+
+group :production do
+	gem 'pg'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
